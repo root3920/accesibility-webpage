@@ -1,0 +1,94 @@
+.contenedor-funcionalidad h1 {
+    font-size: 5vmin;
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+.contenedor-funcionalidad span {
+    color: red;
+    text-decoration: underline 3px;
+    text-underline-offset: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+form>input {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    border: solid 2px;
+    padding: 20px;
+    font-size: 2.5vmin;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.button-9 {
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    height: 44px;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s, box-shadow .08s ease-in;
+    width: 100%;
+}
+
+.button-9:disabled {
+    cursor: default;
+}
+
+.button-9:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.contenedor-botones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.contenedor-ejemplos {
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+
+
+@media screen and (max-width: 550px) {
+    form>input {
+        width: 100%;
+        height: 100px;
+    }
+
+    .button-9 {
+        font-size: 2.6vmin;
+    }
+
+    .contenedor-funcionalidad h1 {
+        font-size: 6vmin;
+    }
+}

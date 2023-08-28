@@ -1,0 +1,17 @@
+.home {
+    background-color: white;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@media screen and (max-width: 550px) {
+    .home {
+        padding: 20px 40px;
+    }
+}
