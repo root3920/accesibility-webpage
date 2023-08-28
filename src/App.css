@@ -8,6 +8,8 @@
     flex-direction: column;
     padding: 20px 60px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+
 }
 
 @media screen and (max-width: 550px) {

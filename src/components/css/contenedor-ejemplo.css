@@ -1,0 +1,54 @@
+.contenedor-ejemplos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 100%;
+    justify-content: baseline;
+}
+
+.contenedor-ejemplos div {
+    width: 33%;
+    margin: px;
+    padding: 30px 50px;
+    border-right: solid black 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contenedor-ejemplos div:last-child {
+    border-right: 0;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .contenedor-ejemplos {
+        margin-top: 50px;
+
+    }
+
+    .contenedor-ejemplos div {
+        width: 100%;
+        border-right: 0;
+        border-bottom: solid black 1px;
+        padding: 30px;
+
+
+    }
+
+    .contenedor-ejemplos div:last-child {
+        border-bottom: 0;
+
+    }
+
+    .contenedor-ejemplos div h3 {
+        font-size: 18px;
+    }
+
+    .contenedor-ejemplos div li {
+        font-size: 16px;
+    }
+
+}

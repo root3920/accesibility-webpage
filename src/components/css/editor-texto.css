@@ -15,6 +15,7 @@
     font-weight: bold;
 }
 
+
 form>textarea {
     margin-top: 20px;
     width: 100%;
@@ -71,14 +72,6 @@ form {
 }
 
 
-.contenedor-ejemplos {
-    display: flex;
-    gap: 10%;
-    flex-wrap: wrap;
-    margin-top: 60px;
-}
-
-
 
 @media screen and (max-width: 550px) {
     form>textarea {
@@ -94,6 +87,10 @@ form {
 
     .button-9 {
         font-size: 16px;
+    }
+
+    .contenedor-funcionalidad {
+        margin-top: 30px;
     }
 
     .contenedor-funcionalidad h1 {

@@ -5,7 +5,6 @@ export const useResize = () => {
 
     window.addEventListener("resize", () => {
         setWindowWidth(window.innerWidth)
-        console.log(windowWidth)
     });
 
     return windowWidth;
