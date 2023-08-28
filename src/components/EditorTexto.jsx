@@ -15,13 +15,13 @@ export const EditorTexto = () => {
 
         <div className="contenedor-funcionalidad">
             {
-                windowWidth > 1028
+                windowWidth > 1028 || window.innerWidth > 1028
                     ? <h1>Potencia tu Productividad:<br /> Descubre Nuestro Editor de Texto <br />para <span>Simplificar tu Vida</span></h1>
                     : <h1>Potencia tu Productividad:  Descubre Nuestro Editor de Texto para <br /><span>Simplificar tu Vida</span></h1>
             }
 
             <form action="">
-                <input
+                <textarea
                     value={valor}
                     onChange={(e) => setValor(e.target.value)}
                     type="text" />

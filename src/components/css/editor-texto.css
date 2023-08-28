@@ -15,13 +15,16 @@
     font-weight: bold;
 }
 
-form>input {
+form>textarea {
     margin-top: 20px;
     width: 100%;
-    height: 200px;
+    height: 15rem;
     border: solid 2px;
     padding: 20px;
     font-size: 16px;
+    overflow-y: visible;
+    resize: none;
+
 }
 
 form {
@@ -46,7 +49,6 @@ form {
     margin: 12px 0 0;
     outline: none;
     overflow: hidden;
-
     text-transform: none;
     transform: translateZ(0);
     transition: all .2s, box-shadow .08s ease-in;
@@ -79,7 +81,7 @@ form {
 
 
 @media screen and (max-width: 550px) {
-    form>input {
+    form>textarea {
         width: 100%;
         height: 100px;
     }
