@@ -64,7 +64,6 @@ form {
 .contenedor-botones {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
@@ -88,6 +87,7 @@ form {
     .contenedor-botones {
         gap: 5%;
         margin-top: 20px;
+        flex-wrap: wrap;
     }
 
     .button-9 {
