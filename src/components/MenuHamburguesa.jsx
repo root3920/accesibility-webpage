@@ -12,7 +12,7 @@ const hamburguesaOnClick = (menuActivo) => {
 
     if (!menuActivo) {
 
-        //Desplega el sub-menu
+        //Desplega el Menu
         menuHamburguesaActivo = true;
         menuDesplegable.style.display = "flex";
 
@@ -26,7 +26,7 @@ const hamburguesaOnClick = (menuActivo) => {
 
     } else {
 
-        //Oculta el sub-menu
+        //Oculta el Menu Desplegable
         menuHamburguesaActivo = false;
         menuDesplegable.style.display = "none";
 
@@ -45,14 +45,16 @@ const hamburguesaOnClick = (menuActivo) => {
 
 export const MenuHamburguesa = ({ subPaginasInfo }) => {
 
-
     return (
         <>
+            {/* Icon Hamburguesa */}
             <div className="hamburguesa" onClick={() => hamburguesaOnClick(menuHamburguesaActivo)}>
                 <div className="raya-horizontal" id="inicio"> {""} </div>
                 <div className="raya-horizontal" id="mitad"> {""} </div>
                 <div className="raya-horizontal" id="final"> {""} </div>
             </div>
+
+            {/* Menu Desplegable */}
             <div className="menu-desplegable">
                 {subPaginasInfo.map((subPagina, key) => {
                     return <Link to={subPagina.pathUrl} key={key} className='menu-desplegable-item'>
