@@ -1,17 +1,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { App } from './App.jsx'
+import { Home } from './pages/Home.jsx'
+import { ColorEditor } from '../src/pages/ColorEditor.jsx'
 import './index.css'
-import {
-  BrowserRouter,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+    errorElement: <h1>Error</h1>
+  },
+  {
+    path: '/color-editor',
+    element: <ColorEditor />,
+    errorElement: <h1>Error</h1>
+  }
+])
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <RouterProvider router={router} />
+
   </React.StrictMode>,
 )
