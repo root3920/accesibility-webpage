@@ -14,7 +14,7 @@ const subPaginasInfo = [
         pathUrl: "/color-editor"
     },
     {
-        nombre: "Integrantes del grupo",
+        nombre: "Información del Creador",
         pathUrl: "/about"
     }
 ]

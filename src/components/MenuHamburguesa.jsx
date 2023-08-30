@@ -22,6 +22,7 @@ const hamburguesaOnClick = (menuActivo) => {
             if (e.id == "mitad") e.style.borderBottom = "solid white 3px";
 
             if (e.id == "final") e.classList.add("hamburguesa-clic-final");
+
         })
 
     } else {
@@ -36,10 +37,10 @@ const hamburguesaOnClick = (menuActivo) => {
             if (e.id == "mitad") e.style.borderBottom = "solid black 3px";
 
             if (e.id == "final") e.classList.remove("hamburguesa-clic-final");
+
         })
     }
 }
-
 
 
 
